@@ -1,0 +1,96 @@
+class System {
+
+    _constructor() {}
+
+    static jvm void print(Str str);
+
+    static jvm void println(Str str);
+
+    static jvm Str input(Str str);
+
+    static jvm void loadJVMLibrary(Str path);
+
+    static jvm void loadNativeLibrary(Str path);
+
+}
+
+class Str {
+
+    jvm constructor(Array<Byte> bytes);
+
+    jvm constructor(Array<Byte> bytes, String encoding);
+
+    jvm Int length();
+
+    jvm Str substr(Int from);
+
+    jvm Str substr(Int from, Int to);
+
+    jvm Str replace(Str oldStr, Str newStr);
+
+    jvm Str replaceAll(Str regex, Str newStr);
+
+    jvm Array<Char> charArray();
+
+}
+
+class Char {
+
+    jvm _constructor();
+
+    jvm Str toStr();
+
+    static jvm Char parse(Str str);
+
+}
+
+class Int {
+
+    jvm _constructor();
+
+    jvm Str toStr();
+
+    static jvm Int parse(Str str);
+
+}
+
+class Double {
+
+    jvm _constructor();
+
+    jvm Str toStr();
+
+    static jvm Double parse(Str str);
+
+}
+
+class Bool {
+
+    jvm _constructor();
+
+    jvm Str toStr();
+
+    static jvm Boolean parse(Str str);
+
+}
+
+class Array<T> {
+
+    jvm _constructor();
+
+    jvm Int length();
+
+}
+
+class Loop {
+
+    Int index();
+    
+    void breakLoop();
+    
+    Bool hasNext();
+    
+}
+
+class Obj {
+}

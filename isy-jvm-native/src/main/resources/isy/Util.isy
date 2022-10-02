@@ -1,0 +1,8 @@
+interface List<T> {
+}
+
+interface Set<T> {
+}
+
+interface Map<T> {
+}

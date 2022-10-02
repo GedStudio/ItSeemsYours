@@ -1,0 +1,6 @@
+rootProject.name = 'isy-lang'
+include 'isy-compiler'
+include 'isy-bridge'
+include 'isy-jvm-native'
+include 'isy-runtime'
+

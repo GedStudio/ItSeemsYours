@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+group 'net.deechael'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
